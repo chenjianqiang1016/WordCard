@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="dp_20">20dp</dimen>
+
+    <!--卡片高度-->
+    <dimen name="card_height">485dp</dimen>
+
+    <dimen name="card_word_text">22dp</dimen>
+
+    <dimen name="card_mean_text">14dp</dimen>
+
+    <dimen name="card_top_space">12dp</dimen>
+
+
+</resources>

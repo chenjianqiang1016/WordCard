@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipe_card_item_root_ll"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="2"
+    />
+
+    <!--复数个单词的布局-->
+    <LinearLayout
+            android:id="@+id/swipe_card_plural_ll"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/view_card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:visibility="visible"
+    >
+
+        <com.demo.wordcard.view.CardItemView
+                android:id="@+id/swipe_card_item_word_1"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.demo.wordcard.view.ImaginaryLineView
+                android:id="@+id/swipe_card_item_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:lineColor="#000000"
+                app:realLength="10"
+                app:dottedLength="10"
+        />
+
+
+        <com.demo.wordcard.view.CardItemView
+                android:id="@+id/swipe_card_item_word_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.demo.wordcard.view.ImaginaryLineView
+                android:id="@+id/swipe_card_item_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:lineColor="#000000"
+                app:realLength="10"
+                app:dottedLength="10"
+        />
+
+        <com.demo.wordcard.view.CardItemView
+                android:id="@+id/swipe_card_item_word_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.demo.wordcard.view.ImaginaryLineView
+                android:id="@+id/swipe_card_item_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:lineColor="#000000"
+                app:realLength="10"
+                app:dottedLength="10"
+        />
+
+        <com.demo.wordcard.view.CardItemView
+                android:id="@+id/swipe_card_item_word_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.demo.wordcard.view.ImaginaryLineView
+                android:id="@+id/swipe_card_item_line_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:lineColor="#000000"
+                app:realLength="10"
+                app:dottedLength="10"
+        />
+
+        <com.demo.wordcard.view.CardItemView
+                android:id="@+id/swipe_card_item_word_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+        />
+
+    </LinearLayout>
+
+    <!--单个单词的布局-->
+    <RelativeLayout
+            android:id="@+id/swipe_card_single_rl"
+            android:visibility="gone"
+            android:background="@drawable/view_card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+    >
+
+        <ImageView
+                android:id="@+id/swipe_card_single_cut"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="5dp"
+        />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/swipe_card_item_single_cl"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+        >
+
+            <TextView
+                    android:id="@+id/swipe_card_single_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="@dimen/card_word_text"
+                    android:text="hello"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+            />
+
+            <ImageView
+                    android:id="@+id/swipe_card_single_voice"
+                    app:layout_constraintTop_toTopOf="@id/swipe_card_single_word"
+                    app:layout_constraintBottom_toBottomOf="@id/swipe_card_single_word"
+                    app:layout_constraintEnd_toStartOf="@id/swipe_card_single_word"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="26dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/ic_voice_2"
+            />
+
+            <TextView
+                    android:id="@+id/swipe_card_single_mean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="n.你好"
+                    android:textSize="@dimen/card_mean_text"
+                    android:layout_marginTop="@dimen/card_top_space"
+                    app:layout_constraintTop_toBottomOf="@id/swipe_card_single_word"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4"
+    />
+
+</LinearLayout>

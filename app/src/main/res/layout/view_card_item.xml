@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:orientation="vertical"
+              android:paddingStart="15dp"
+              android:paddingEnd="15dp"
+              android:gravity="center_vertical"
+
+
+>
+
+    <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/view_card_item_voice"
+                android:src="@mipmap/ic_voice_2"
+                android:layout_width="20dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:layout_height="22dp"/>
+
+        <TextView
+                android:id="@+id/view_card_item_word"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/view_card_item_voice"
+                android:textSize="@dimen/card_word_text"
+                android:textColor="#000000"
+                tools:text="hello"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginEnd="40dp"
+        />
+
+        <ImageView
+                android:id="@+id/view_card_item_cut"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/view_card_item_mean"
+            android:layout_marginTop="@dimen/card_top_space"
+            android:textColor="#000000"
+            android:textSize="@dimen/card_mean_text"
+            tools:text="n.一百"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

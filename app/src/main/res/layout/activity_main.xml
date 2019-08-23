@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".activity.MainActivity">
+
+
+    <TextView
+            android:id="@+id/to_card_1"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="普通单词卡学习"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <TextView
+            android:id="@+id/to_card_2"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="无限循环复习"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <TextView
+            android:id="@+id/all_word"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="全部单词"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/word_study_status"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="单词学习状态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <TextView
+            android:id="@+id/cut_word"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="斩掉的单词"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <TextView
+            android:id="@+id/reset"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="#55ff0000"
+            android:text="重置-全部置为未学状态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
