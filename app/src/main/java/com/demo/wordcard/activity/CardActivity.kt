@@ -469,7 +469,6 @@ class CardActivity : BaseActivity(), SwipeFlingAdapterView.onFlingListener,
         //更新进度
         word_card_pb?.progress = wordStudyIndex
 
-        //拿到没有加到盒子中的单词数据，生成一个新的list，然后刷新
         var newList: MutableList<CardBean> = mutableListOf<CardBean>()
 
         newList = getCardFilterList()

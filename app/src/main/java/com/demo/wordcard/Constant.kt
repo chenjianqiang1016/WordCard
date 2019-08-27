@@ -19,9 +19,6 @@ class Constant {
          */
         val Cycle: Int = NotCycle + 1
 
-        //卡片单词，改变斩的状态
-        val CardCutChange = "cutChange"
-
         /**
          * 单词卡中，用于保存，一卡多词 设置状态标记值的key
          */

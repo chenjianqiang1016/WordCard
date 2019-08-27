@@ -19,21 +19,6 @@ class MyEvent {
         //处理单词斩的状态
         val HandleWordCutStatus = "HandleWordCutStatus"
 
-        //速记添加数据
-        val ShortHandAddData = "shortHandAddData"
-
-        //数据为空
-        val ShortHandDataIsEmpty = "shortHandDataIsEmpty"
-
-        //速记卡片切换展示样式
-        val ShortHandChangeShowType = "shortHandChangeShowType"
-
-        //禁止卡片框架的onLayout
-        val BanOnLayout = "banOnLayout"
-
-        //允许卡片框架的onLayout
-        val AllowOnLayout = "allowOnLayout"
-
         //处理读音
         val HandleCardVoice = "HandleCardVoice"
 

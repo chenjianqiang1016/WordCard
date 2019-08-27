@@ -273,7 +273,7 @@ class WordCardAdapter(val context: Context, val list: MutableList<CardBean>) :
                 holder.swipe_card_single_word,
                 holder.swipe_card_single_mean,
                 holder.swipe_card_single_voice,
-                holder.swipe_card_single_master,
+                holder.swipe_card_single_cut,
                 bean
             )
 
@@ -336,7 +336,7 @@ class WordCardAdapter(val context: Context, val list: MutableList<CardBean>) :
         var swipe_card_single_mean: TextView = itemView.findViewById(R.id.swipe_card_single_mean) as TextView
         var swipe_card_single_voice: ImageView = itemView.findViewById(R.id.swipe_card_single_voice) as ImageView
 
-        var swipe_card_single_master: ImageView = itemView.findViewById(R.id.swipe_card_single_cut) as ImageView
+        var swipe_card_single_cut: ImageView = itemView.findViewById(R.id.swipe_card_single_cut) as ImageView
 
     }
 
